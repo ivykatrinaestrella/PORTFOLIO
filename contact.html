@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .navbar {
+      background-color: #ffbfdc;
+      padding: 20px;
+    }
+
+    .navbar-nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-item {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .nav-item a {
+      color: #333333;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ff7fa7;
+      line-height: 50px;
+      text-align: center;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .nav-item a:hover {
+      background-color: #ff5581;
+    }
+
+    .nav-item a.active {
+      background-color: #ff5581;
+    }
+
+    .hero {
+      background-color: rgba(255, 165, 196, 0.7);
+      text-align: center;
+      padding: 100px 0;
+      color: white;
+    }
+
+    .hero-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-family: "Arial", sans-serif;
+    }
+
+    .hero-description {
+      font-size: 20px;
+    }
+
+    .profile-pic-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    /* Contact Section */
+    #contact {
+      background-color: #c95479;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .contact-method {
+      margin: 15px;
+      font-size: 18px;
+    }
+
+    .contact-method img {
+      width: 30px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    /* Contact Form */
+    #contact-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #contact-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    #contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    #contact-form input[type="submit"] {
+      background-color: #ff7fa7;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    #contact-form input[type="submit"]:hover {
+      background-color: #ff5581;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ffbfdc;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="index.html" >Home</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="skills.html">Skills</a></li>
+        <li class="nav-item"><a href="contact.html"class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1 class="hero-title">Contact</h1>
+    <p class="hero-description">Get in touch with me!</p>
+  </div>
+
+  <section id="contact">
+    <div class="contact-info">
+      <div class="contact-method">
+        <img src="facebook_logo.png" alt="Facebook Logo">
+        <span>Ivy Estrella</span>
+      </div>
+      <div class="contact-method">
+        <img src="gmail_logo.png" alt="Gmail Logo">
+        <span>ivykatrinaestrella429@gmail.com</span>
+      </div>
+      <div class="contact-method">
+        <img src="phone_logo.png" alt="Phone Logo">
+        <span>0916-410-0924 / 0991-872-7594</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-form">
+    <div class="container">
+      <h2>Contact Form</h2>
+      <hr>
+      <form action="send-email.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="Ivy Katrina G. Estrella" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="ivykatrinaestrella429@gmail.com" required>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" value="Web Programming" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="hidden" name="datetimecreated" value="2023-02-17">
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </section>
+
+  
+</body>
+
+</html>

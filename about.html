@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .navbar {
+      background-color: #ffbfdc;
+      padding: 20px;
+    }
+
+    .navbar-nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-item {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .nav-item a {
+      color: #333333;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ff7fa7;
+      line-height: 50px;
+      text-align: center;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .nav-item a:hover {
+      background-color: #ff5581;
+    }
+
+    .nav-item a.active {
+      background-color: #ff5581;
+    }
+
+    .hero {
+      background-color: rgba(255, 165, 196, 0.7);
+      text-align: center;
+      padding: 100px 0;
+      color: rgb(253, 246, 246);
+    }
+
+    .hero-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-family: "Arial", sans-serif;
+    }
+
+    .hero-description {
+      font-size: 20px;
+    }
+
+    .profile-pic-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+      background-color: #e7aac2;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      font-family: "Arial", sans-serif;
+      color: #f2e9e9;
+      line-height: 1.5;
+    }
+
+    .content p:first-child {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #ffbfdc;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      font-family: "Arial", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="index.html" >Home</a></li>
+        <li class="nav-item"><a href="about.html" class="active">About</a></li>
+        <li class="nav-item"><a href="skills.html">Skills</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">About Me</h1>
+      <div class="profile-pic-container">
+        <div class="profile-pic">
+          <img src="img/giphy.gif" alt="Profile Picture">
+        </div>
+        <div class="profile-pic">
+          <img src="img/PUP.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-pic">
+          <img src="img/profile-pic1.png" alt="Profile Picture">
+        </div>
+        <div class="profile-pic">
+          <img src="img/mb.gif" alt="Profile Picture">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <p>
+      Hello, my name is Ivy Katrina G. Estrella, and I am a passionate IT student at the Polytechnic University of the
+      Philippines - Santa Maria Branch (PUP SMB). I'm currently pursuing a Bachelor of Science in Information Technology
+      (BSIT) degree, and I'm dedicated to honing my skills and staying updated with the latest advancements in the IT
+      industry.
+    </p>
+    <p>
+      In addition to my academic pursuits, I have a great interest in online gaming. Valorant and Mobile Legends are two
+      of my favorite games, as they provide me with an exciting and competitive outlet to unwind and connect with
+      friends. I enjoy the thrill of strategic gameplay and teamwork that these games offer.
+    </p>
+    <p>
+      When it comes to music, I find solace in the soothing melodies and heartfelt lyrics of "Tenerife Sea" by Ed
+      Sheeran. The song resonates with me on a deeper level, and I often find myself listening to it to relax and
+      reflect.
+    </p>
+    <p>
+      I am currently residing in Sta. Maria, Bulacan, and I draw inspiration from the vibrant community and the various
+      opportunities it provides. As a 20-year-old, born on July 19, 2002, I believe in embracing each day as a chance to
+      learn, grow, and make a positive impact on the world around me.
+    </p>
+  </div>
+
+</body>
+
+</html>
